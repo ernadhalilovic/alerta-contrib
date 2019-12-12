@@ -47,7 +47,9 @@ class ServiceIntegration(PluginBase):
         #if BEACON_SEND_ON_ACK == False or status not in ['ack', 'assign']:
             #return
 
-        LOG.debug('Beacon payload: %s', payload)
+        LOG.debug('Beacon alert: %s', alert)
+        LOG.debug('Beacon status: %s', status)
+        LOG.debug('Beacon text: %s', text)
         try:
             #payload = self._beacon_prepare_payload(alert, status, text, **kwargs)
             payload = alert
