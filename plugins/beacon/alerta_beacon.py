@@ -41,7 +41,7 @@ class ServiceIntegration(PluginBase):
     def post_receive(self, alert):
         return
 
-    def status_change(self, alert, status, text):
+    def status_change(self, alert, status, text, **kwargs):
         BEACON_WEBHOOK_URL = self.get_config('BEACON_WEBHOOK_URL', type=str, **kwargs)
 
         if BEACON_SEND_ON_ACK == False or status not in ['ack', 'assign']:
