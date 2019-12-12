@@ -1,4 +1,11 @@
 import logging
+import os
+import json
+import requests
+try:
+      from alerta.plugins import app  # alerta >= 5.0
+except ImportError:
+      from alerta.app import app  # alerta < 5.0
 
 from alerta.plugins import PluginBase
 
