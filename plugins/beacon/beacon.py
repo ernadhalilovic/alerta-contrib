@@ -1,6 +1,5 @@
 import logging
 
-from alerta.exceptions import RateLimit
 from alerta.plugins import PluginBase
 
 LOG = logging.getLogger('alerta.plugins.beacon')

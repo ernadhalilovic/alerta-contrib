@@ -6,7 +6,7 @@ setup(
     name="alerta-beacon",
     version=version,
     description='Alerta plugin for Beacon',
-    url='https://github.csnzoo.com/eh356e/wayfair-alerts',
+    url='https://github.com/ernadhalilovic/alerta-contrib',
     license='MIT',
     author='Ernad Halilovic',
     author_email='ehalilovic@wayfair.com',
