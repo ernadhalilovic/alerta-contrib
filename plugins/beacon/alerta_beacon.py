@@ -50,6 +50,7 @@ class ServiceIntegration(PluginBase):
         LOG.debug('Beacon alert: %s', alert)
         LOG.debug('Beacon status: %s', status)
         LOG.debug('Beacon text: %s', text)
+        LOG.debug('Beacon kwargs: %s', kwargs)
         payload = dict()
 
         try:
@@ -58,6 +59,7 @@ class ServiceIntegration(PluginBase):
             payload['environment'] = alert.environment
             payload['event'] = alert.event
             payload['id'] = alert.id
+            payload['tags'] = alert.tags
 
             LOG.debug('Beacon payload: %s', payload)
         except Exception as e:
