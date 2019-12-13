@@ -50,7 +50,7 @@ class ServiceIntegration(PluginBase):
         LOG.debug('Beacon alert: %s', alert)
         LOG.debug('Beacon status: %s', status)
         LOG.debug('Beacon text: %s', text)
-        LOG.debug('Beacon kwargs: %s', kwargs)
+        LOG.debug('Beacon kwargs: %s', **kwargs)
         payload = dict()
 
         try:
