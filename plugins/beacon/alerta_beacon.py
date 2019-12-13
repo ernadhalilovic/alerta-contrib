@@ -59,7 +59,6 @@ class ServiceIntegration(PluginBase):
             payload['environment'] = alert.environment
             payload['event'] = alert.event
             payload['id'] = alert.id
-            payload['alert'] = kwargs.get("tags")[0]
 
             LOG.debug('Beacon payload: %s', payload)
         except Exception as e:
